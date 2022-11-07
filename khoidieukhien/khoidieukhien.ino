@@ -1,3 +1,10 @@
+/**
+ * Created by @Author: Mai Manh Huy
+ * Project : Smart Agritecture Using IoT System.
+ * Create Time : 04:45 - 25/10/2022
+ * For all issue contact me : huymm98@gmail.com
+ * Control 
+ */
 /*
  * LoRa E32-TTL-100
  * Start device or reset to send a message
@@ -20,7 +27,7 @@
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 LoRa_E32 e32ttl100(D3, D4); // e32 TX e32 RX
-/* Fill-in your Template ID  */
+/* Fill-in Template ID Blynk  */
 #define BLYNK_TEMPLATE_ID "TMPLvhr1j7Mk"
 #define BLYNK_DEVICE_NAME "IOT"
 #define BLYNK_AUTH_TOKEN "ct4pGWM0b_PkftQNA1lv0pFcYOlN0Max"
@@ -66,7 +73,7 @@ void setup() {
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
   
-  pinMode(LED_BUILTIN, OUTPUT);     // Initialize the LED_BUILTIN pin as an output
+  pinMode(LED_BUILTIN, OUTPUT);     // test led esp blynk
   
   //Connecting to Blynk Cloud
   Blynk.begin(auth, ssid, pass);
@@ -156,8 +163,7 @@ void loop()
            
   delay(100);
     // Clear the screen
-        }
-        
+        }  
     }
   }
   Blynk.run();
