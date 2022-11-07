@@ -1,7 +1,7 @@
 # Nông nghiệp thông minh sử dụng hệ thống IoT
 ## VIdeo minh họa :
 
-[Bấm vào đây](https://www.youtube.com/watch?v=pdlXQQF5UMQ)
+[Bấm vào đây](https://youtu.be/J7Ro7WQK_mI)
 ## Các module sử dụng:
 
 1. Cảm biến nhiệt độ, độ ẩm dht 11
